@@ -55,6 +55,7 @@
     border: none;
     background-color: #dc2626;
     color: white;
+    cursor: pointer;
 }
 .content-container {
     height: 60%;

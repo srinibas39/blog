@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Card } from './components/Card/Card';
+import { CardContainer } from './components/CardContainer/CardContainer';
 import { Content } from './components/content/Content';
 import { Header } from './components/header/Header';
 
@@ -9,7 +9,7 @@ import { Header } from './components/header/Header';
   return <>
   <Header/>
   <Content/>
-  <Card/>
+  <CardContainer/>
   </>
 }
 
