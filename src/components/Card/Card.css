@@ -4,6 +4,8 @@
     border-radius: 1rem;
     width: 20rem;
     box-shadow: 0px 0px 8px 4px #AAA;
+    transition: transform 0.2s;
+ 
  
 }
 .img-container {
@@ -64,4 +66,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+.card:hover{
+    transform: scale(1.05);
 }
