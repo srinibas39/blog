@@ -15,4 +15,5 @@
 }
 .header-box p{
     margin: 0 1rem;
+    cursor: pointer;
 }
