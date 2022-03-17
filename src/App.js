@@ -11,11 +11,11 @@ import { SearchContent } from './components/searchContent/SearchContent';
 const App = () => {
   return <>
     <Header />
-    {/* <Content/>
-    <CardContainer/> */}
-    <SearchContent />
+    <Content/>
+    <CardContainer/>
+    {/* <SearchContent />
     <SearchBox/>
-    <div style={{minHeight:"46vh"}}></div>
+    <div style={{minHeight:"46vh"}}></div> */}
     <Footer />
   </>
 }
