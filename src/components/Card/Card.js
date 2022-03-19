@@ -4,7 +4,7 @@ export const Card = ({ data }) => {
     return <>
         {
             data.map((el) => {
-                return <div className="card">
+                return <div key={el.id} className="card">
                     <div className="img-container">
                         <img src={el.cover_image} alt="loading..." />
                     </div>
