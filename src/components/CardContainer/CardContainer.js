@@ -1,14 +1,13 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Card } from "../Card/Card"
-import { useData } from "../DataContext"
 import { Pagination } from "../pagination/pagination"
 import "./CardContainer.css"
 
 export const CardContainer = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
-    const {data,setData}=useData()
+    const [data, setData] = useState([]);
     const [currPage,setCurrPage]=useState(1);
     
     
@@ -31,7 +30,10 @@ export const CardContainer = () => {
             }
         })()
     }, [])
-
+    useEffect(()=>{
+       localStorage.setItem("data",JSON.stringify(data));
+       console.log("data stored in database");
+    },[data])
     //implementation of pagination
     const pages =data.length/6 //10 is the limit that in each page we can have a maximum of 10 items.
 
@@ -44,7 +46,7 @@ export const CardContainer = () => {
 
     const filterData=data.slice(si,ei)
 
-    console.log(data);
+    
 
     return <>{loading ? <div>loading...</div> : error ? <div>error</div> :
         <div className="card-container">

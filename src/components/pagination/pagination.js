@@ -10,7 +10,7 @@ export const Pagination = ({ pagesArr ,setCurrPage }) => {
                 })
 
             }
-
+            
         </ul>
     </nav>
 }
