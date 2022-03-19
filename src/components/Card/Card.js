@@ -14,7 +14,7 @@ export const Card = ({ data }) => {
                                 <span className="material-icons-outlined">
                                     favorite
                                 </span>
-                                {el.positive_reaction_count}
+                                 {el.positive_reactions_count}
                             </div>
                             <div className="time">
                                 <span className="material-icons-outlined">
@@ -26,9 +26,9 @@ export const Card = ({ data }) => {
 
                         </div>
 
-                        <h2>{el.title}</h2>
-                        <p>{el.description}</p>
-                        <button className="btn-readmore"><a href={el.url}>READ MORE</a></button>
+                        <h4>{el.title}</h4>
+                        <p className="para">{el.description}</p>
+                        <button className="btn-readmore"><a className="link" href={el.url}>READ MORE</a></button>
 
                     </div>
                 </div>

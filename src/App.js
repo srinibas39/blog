@@ -13,9 +13,9 @@ const App = () => {
     <Header />
     <Content/>
     <CardContainer/>
-    {/* <SearchContent />
+    <SearchContent />
     <SearchBox/>
-    <div style={{minHeight:"46vh"}}></div> */}
+    <div style={{minHeight:"46vh"}}></div>
     <Footer />
   </>
 }

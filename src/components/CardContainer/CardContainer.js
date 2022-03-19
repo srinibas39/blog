@@ -1,13 +1,14 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Card } from "../Card/Card"
+import { useData } from "../DataContext"
 import { Pagination } from "../pagination/pagination"
 import "./CardContainer.css"
 
 export const CardContainer = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
-    const [data, setData] = useState([]);
+    const {data,setData}=useData()
     const [currPage,setCurrPage]=useState(1);
     
     
