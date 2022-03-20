@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about p{
+    text-align: center;
+}

@@ -1,12 +1,8 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { CardContainer } from './components/CardContainer/CardContainer';
-import { Content } from './components/content/Content';
-import { Footer } from './components/Footer/Footer';
-import { Header } from './components/header/Header';
-import { SearchBox } from './components/SearchBox/SearchBox';
-import { SearchContent } from './components/searchContent/SearchContent';
+import { PageAbout } from './pages/AboutPage';
+
 import { Home } from './pages/Home';
 import { Search } from './pages/Search';
 
@@ -17,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/search" element={<Search/>}/>
+        <Route path="/about" element={<PageAbout/>}/>
       </Routes>
     
   </>

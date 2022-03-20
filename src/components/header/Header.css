@@ -17,17 +17,18 @@
   cursor: pointer;
 }
 .link-active {
-  color: red;
+  color: #dc2626;
   text-decoration: none;
 }
 .link-active:hover {
-  color: red;
+  color: #dc2626;
   text-decoration: "none";
 }
-.link {
+.links {
   color: black;
+  text-decoration: none;
 }
-.link:hover {
-  color: red;
+.links:hover {
+  color: #dc2626;
   text-decoration: "none";
 }
