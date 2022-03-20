@@ -1,13 +1,16 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
 import { UFCsvg } from "../svg/UFCsvg"
 import "./Header.css"
 
-export const Header=()=>{
+export const Header = () => {
+
     return <header className="header">
-        <UFCsvg/>
+        <UFCsvg />
         <div className="header-box">
-             <p><a>Blogs</a></p>
-             <p><a>Search Blogs</a></p>
-             <p><a>About</a></p>
+            <Link to="/"><p>Blogs</p></Link>
+            <Link to="/search"><p>Search Blogs</p></Link>
+            <Link to="/about"><p>About</p></Link>
         </div>
     </header>
 }

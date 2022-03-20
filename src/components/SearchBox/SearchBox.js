@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { Card } from "../Card/Card";
+
 import "./SearchBox.css"
 export const SearchBox = () => {
     const [text, setText] = useState("");
@@ -15,7 +16,7 @@ export const SearchBox = () => {
     }, [])
 
 
-    const filteredData = data && data.filter((el) => el.tag_list.includes(text))
+    const filteredData = data && data.filter((el) => el.tag_list.includes(text.toLowerCase()))
 
     const handleChange = (t) => {
         setText(t)

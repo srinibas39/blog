@@ -3,6 +3,6 @@ import "./SearchContent.css";
 export const SearchContent=()=>{
     return <div className="search-container">
         <h1>Search Blogs</h1>
-        <p>Enter keywords to search for Blog e.g javascript</p>
+        <p>Enter keywords to search for Blog e.g javascript,todo,web3</p>
     </div>
 }
